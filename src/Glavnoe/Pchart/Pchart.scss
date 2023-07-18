@@ -1,0 +1,196 @@
+* {
+    margin         : 0px;
+    padding        : 0px;
+    scroll-behavior: smooth;
+    box-sizing     : border-box;
+}
+
+.piechart-container {
+    display   : flex;
+    margin-top: 30px;
+    height: 47vh;
+
+}
+
+.piechart {
+    display        : flex;
+    border-radius  : 5px;
+    margin-left    : 55px;
+    display        : flex;
+    justify-content: center;
+    border-radius  : 14px;
+    box-shadow     : 0px 0px 0px 2px whitesmoke;
+    width : 55vh;
+}
+
+.recharts-tooltip-wrapper {
+    box-shadow: 0px 2px 2px 0px rgb(33, 81, 184);
+}
+
+.piechart2 {
+    display        : flex;
+    border-radius  : 5px;
+    margin-left    : 50px;
+    display        : flex;
+    justify-content: center;
+    border-radius  : 14px;
+    box-shadow     : 0px 0px 0px 2px whitesmoke;
+    width : 55vh;
+}
+
+.recharts-tooltip-wrapper {
+    box-shadow: 0px 2px 2px 0px rgb(33, 81, 184);
+}
+
+.recharts-default-legend {
+    width: auto;
+}
+
+@media (max-width:320px) {
+    .piechart-container {
+        position       : relative;
+        margin-top     : 20px;
+        display        : flex;
+        justify-content: space-around;
+        width          : 200px;
+        height         : 90px;
+    }
+
+    .piechart-container.recharts-tooltip-wrapper {
+        box-shadow: 0px 2px 2px 0px rgb(33, 81, 184);
+    }
+
+    .recharts-default-legend {
+        display  : flex;
+        width    : 80px;
+        height   : 20px;
+        display  : flex;
+        font-size: 8px;
+    }
+
+    .piechart .legend-item-0 svg {
+        display        : flex;
+        justify-content: center;
+        margin-left    : 0px;
+        width          : 10px;
+        height         : auto;
+        font-size      : 5;
+    }
+
+
+    .piechart .legend-item-0 {
+        display        : flex;
+        justify-content: center;
+        margin-left    : -5px;
+        font-size      : 5;
+    }
+
+    .piechart .legend-item-1 svg {
+        display        : flex;
+        justify-content: center;
+        margin-left    : 0px;
+        width          : 10px;
+        height         : auto;
+        font-size      : 5;
+    }
+
+    .piechart .legend-item-1 {
+        display        : flex;
+        justify-content: center;
+        margin-left    : -10px;
+        font-size      : 5;
+    }
+
+    .piechart .legend-item-2 svg {
+        display        : flex;
+        justify-content: center;
+        margin-left    : 0px;
+        width          : 10px;
+        height         : auto;
+        font-size      : 5;
+    }
+
+    .piechart .legend-item-2 {
+        display        : flex;
+        justify-content: center;
+        margin-left    : -10px;
+        font-size      : 5;
+    }
+
+    .piechart .recharts-surface {
+        margin-left: -10px;
+        width      : 110px;
+        height     : 100px;
+    }
+
+
+    .recharts-layer recharts-pie {
+        width    : 84px;
+        height   : 95px;
+        font-size: 8px;
+
+    }
+
+    .piechart {
+        display        : flex;
+        border-radius  : 5px;
+        margin-left    : 40px;
+        display        : flex;
+        justify-content: center;
+        width          : 95px;
+        height         : 84px;
+        box-shadow     : 0px 0px 0px 2px whitesmoke;
+    }
+
+    .piechart2 {
+        display        : flex;
+        border-radius  : 5px;
+        margin-left    : 10px;
+        display        : flex;
+        justify-content: center;
+        width          : 95px;
+        height         : 84px;
+        box-shadow     : 0px 0px 0px 2px whitesmoke;
+    }
+
+    .piechart2 .legend-item-0 svg {
+        display        : flex;
+        justify-content: center;
+        margin-left    : 0px;
+        width          : 10px;
+        height         : auto;
+        font-size      : 5;
+    }
+
+
+    .piechart2 .legend-item-0 {
+        display        : flex;
+        justify-content: center;
+        margin-left    : 5px;
+        font-size      : 5;
+    }
+
+    .piechart2 .legend-item-1 svg {
+        display        : flex;
+        justify-content: center;
+        margin-left    : 0px;
+        width          : 10px;
+        height         : auto;
+        font-size      : 5;
+    }
+
+    .piechart2 .legend-item-1 {
+        display        : flex;
+        justify-content: center;
+        margin-left    : -5px;
+        font-size      : 5;
+    }
+
+
+    .piechart2 .recharts-surface {
+        margin-left: -10px;
+        width      : 110px;
+        height     : 100px;
+    }
+
+}

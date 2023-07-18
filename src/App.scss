@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: rgb(128, 128, 206);
+}
+
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 320px;
+    color: #000000;
+}
