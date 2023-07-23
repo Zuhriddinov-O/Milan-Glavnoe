@@ -13,6 +13,11 @@ body {
 .Glavnoe {
     display: flex;
 
+    .MainGlavnoe {
+        position: relative;
+        width   : 289px;
+    }
+
     &__sidebar {
         top         : 0;
         min-height  : 100vh;
@@ -23,6 +28,7 @@ body {
         width       : 21.5%;
         background  : #000D7F;
         box-shadow  : 4px 0px 8px rgba(0, 0, 0, 0.1);
+        z-index     : 1;
     }
 
     &__sidebarTop {
@@ -42,7 +48,7 @@ body {
     .sidebar__p {
         margin-left: 3%;
         font-weight: 600;
-        font-size  : 17.4256px;
+        font-size  : 3vh;
         color      : #FFFFFF;
     }
 
@@ -54,7 +60,7 @@ body {
         position      : fixed;
         flex-direction: column;
         width         : 21%;
-        gap: 20px;
+        gap           : 20px;
     }
 
     .category {
@@ -105,7 +111,7 @@ body {
     .sidebar__glavnoe {
         margin-left   : 3%;
         font-weight   : 500;
-        font-size     : 18px;
+        font-size     : 3vh;
         line-height   : 124%;
         letter-spacing: 0.02em;
         color         : #FFFFFF;
@@ -160,7 +166,7 @@ body {
     .sidebar__universiteti {
         margin-left   : 3%;
         font-weight   : 500;
-        font-size     : 18px;
+        font-size     : 3vh;
         line-height   : 124%;
         letter-spacing: 0.02em;
         color         : #FFFFFF;
@@ -214,7 +220,7 @@ body {
     .sidebar__studenti {
         margin-left   : 3%;
         font-weight   : 500;
-        font-size     : 18px;
+        font-size     : 3vh;
         line-height   : 124%;
         letter-spacing: 0.02em;
         color         : #FFFFFF;
@@ -268,16 +274,15 @@ body {
     .sidebar__logout {
         margin-left   : 3%;
         font-weight   : 500;
-        font-size     : 18px;
+        font-size     : 3vh;
+        line-height   : 124%;
         letter-spacing: 0.02em;
         color         : #FFFFFF;
     }
 
     .Glavnoe-init {
-        position      : relative;
         display       : flex;
         flex-direction: column;
-        margin-left   : 14%;
 
     }
 
@@ -297,7 +302,7 @@ body {
         font-family: 'Raleway';
         font-style : normal;
         font-weight: 700;
-        font-size  : 26px;
+        font-size  : 4vh;
         line-height: 31px;
         color      : #000000;
     }
@@ -306,14 +311,14 @@ body {
         display     : flex;
         align-items : center;
         margin-right: 20px;
-        margin-left: 5px;
+        margin-left : 5px;
         font-weight : 600;
         font-size   : 16px;
         color       : #000000;
     }
 
     .Akxmedova {
-        margin-left : 5px;
+        margin-left: 5px;
     }
 
     .girlimg {
@@ -337,11 +342,13 @@ body {
     }
 
     .indication1 {
-        width        : 20%;
-        background   : #FFFFFF;
-        box-shadow   : 0px -2px 8px rgba(0, 0, 0, 0.09), 2px 4px 9px rgba(0, 0, 0, 0.1);
-        border-radius: 14px;
-        border-left  : 5px solid #000D7F;
+        display       : flex;
+        flex-direction: column;
+        width         : 20%;
+        background    : #FFFFFF;
+        box-shadow    : 0px -2px 8px rgba(0, 0, 0, 0.09), 2px 4px 9px rgba(0, 0, 0, 0.1);
+        border-radius : 14px;
+        border-left   : 5px solid #000D7F;
     }
 
     .studenti {
@@ -349,19 +356,21 @@ body {
         display        : flex;
         justify-content: center;
         font-weight    : 600;
-        font-size      : 150%;
+        font-size      : 3.5vh;
         letter-spacing : 0.02em;
         color          : #00121A;
+        min-height     : 20%;
     }
 
     .studenti__amount {
-        margin-top     : 16px;
         display        : flex;
         justify-content: center;
+        align-items    : center;
         font-weight    : 600;
-        font-size      : 35px;
+        font-size      : 5.5vh;
         letter-spacing : 0.02em;
         color          : #000D7F;
+        min-height     : 60%;
     }
 
     .indication2 {
@@ -376,22 +385,22 @@ body {
         margin-top     : 16px;
         display        : flex;
         justify-content: center;
-        align-items: center;
         font-weight    : 600;
-        font-size      : 22px;
+        font-size      : 3.5vh;
         letter-spacing : 0.02em;
         color          : #00121A;
+        min-height     : 20%;
     }
 
     .universiteti__amount {
-        margin-top     : 16px;
         display        : flex;
         justify-content: center;
+        align-items    : center;
         font-weight    : 600;
-        font-size      : 35px;
-        line-height    : 41px;
+        font-size      : 5.5vh;
         letter-spacing : 0.02em;
         color          : #E96383;
+        min-height     : 60%;
     }
 
     .indication3 {
@@ -407,24 +416,21 @@ body {
         display        : flex;
         justify-content: center;
         font-weight    : 600;
-        font-size      : 22px;
-        line-height    : 26px;
+        font-size      : 3.5vh;
         letter-spacing : 0.02em;
         color          : #00121A;
+        min-height     : 20%;
     }
 
     .strani__amount {
-        margin-top     : 16px;
         display        : flex;
         justify-content: center;
-        align-items: center;
-        font-family    : 'Raleway';
-        font-style     : normal;
+        align-items    : center;
         font-weight    : 600;
-        font-size      : 35px;
-        line-height    : 41px;
+        font-size      : 5.5vh;
         letter-spacing : 0.02em;
         color          : #FCCA58;
+        min-height     : 60%;
     }
 
     .indication4 {
@@ -439,26 +445,22 @@ body {
         margin-top     : 16px;
         display        : flex;
         justify-content: center;
-        font-family    : 'Raleway';
-        font-style     : normal;
         font-weight    : 600;
-        font-size      : 22px;
-        line-height    : 26px;
+        font-size      : 3.5vh;
         letter-spacing : 0.02em;
         color          : #00121A;
+        min-height     : 20%;
     }
 
     .fakulteti__amount {
         display        : flex;
         justify-content: center;
-        margin-top     : 16px;
-        font-family    : 'Raleway';
-        font-style     : normal;
+        align-items    : center;
         font-weight    : 600;
-        font-size      : 35px;
-        line-height    : 41px;
+        font-size      : 5.5vh;
         letter-spacing : 0.02em;
         color          : #10CC9B;
+        min-height     : 60%;
     }
 
     .locations {
@@ -475,5 +477,638 @@ body {
         width        : 97%;
         height       : 100vh;
         border-radius: 14px;
+    }
+}
+
+@media (min-width:1440px) {
+    .Glavnoe {
+        display       : flex;
+        flex-direction: column;
+
+        .MainGlavnoe {
+            width   : 100%;
+            height  : 85px;
+            position: relative;
+        }
+
+        .Glavnoe__sidebar {
+            z-index   : 1;
+            display   : flex;
+            width     : 100%;
+            min-height: 85px;
+        }
+
+        .Glavnoe__sidebarTop {
+            margin-top: -10px;
+            width     : 38%;
+            background: none;
+        }
+
+        .sidebar__p {
+            font-size: 20px;
+        }
+
+        .sidebar__img {
+            width: 35px;
+        }
+
+        .categories {
+            top            : -15px;
+            position       : relative;
+            display        : flex;
+            justify-content: space-around;
+            flex-direction : unset;
+            width          : 60%;
+        }
+
+        .category {
+            background     : none;
+            display        : flex;
+            justify-content: center;
+            padding        : 0;
+            width          : 200px;
+
+        }
+
+        &::before {
+            content         : '';
+            height          : 100%;
+            width           : 0;
+            background-color: white;
+            top             : 0;
+            left            : 0;
+            position        : absolute;
+            transition      : 0.3s linear
+        }
+
+        .active {
+            border-left  : none;
+            border-bottom: 3px solid white;
+            background   : rgba(250, 253, 255, 0.05);
+
+            &::before {
+                width: 5px;
+            }
+        }
+
+        .category:hover {
+            background   : rgba(250, 253, 255, 0.05);
+            border-bottom: 3px solid white;
+            border-left  : none;
+            transition   : 0.3s linear;
+
+            &::before {
+                border-left  : none;
+                border-bottom: 3px solid white;
+                width        : 5px;
+            }
+        }
+
+        .sidebar__glavnoe {
+            font-size: 22px;
+        }
+
+        .sidebar__icon1 {
+            width : 30px;
+            height: 30px;
+        }
+
+        .category2 {
+            background     : none;
+            display        : flex;
+            padding        : 0;
+            justify-content: center;
+            width          : 200px;
+        }
+
+        &::before {
+            content         : '';
+            height          : 100%;
+            width           : 0;
+            background-color: white;
+            top             : 0;
+            left            : 0;
+            position        : absolute;
+            transition      : 0.3s linear
+        }
+
+        .active {
+            border-left  : none;
+            border-bottom: 3px solid white;
+            background   : rgba(250, 253, 255, 0.05);
+            width        : 200px;
+
+            &::before {
+                width: 5px;
+            }
+        }
+
+        .category2:hover {
+            background   : rgba(250, 253, 255, 0.05);
+            border-bottom: 3px solid white;
+            border-left  : none;
+            transition   : 0.3s linear;
+            width        : 200px;
+
+            &::before {
+                border-left  : none;
+                border-bottom: 3px solid white;
+                width        : 5px;
+            }
+        }
+
+
+
+        .sidebar__universiteti {
+            font-size: 22px;
+        }
+
+        .sidebar__icon2 {
+            width : 30px;
+            height: 30px;
+        }
+
+        .category3 {
+            background     : none;
+            display        : flex;
+            justify-content: center;
+            padding        : 0;
+            width          : 200px;
+        }
+
+
+        &::before {
+            content         : '';
+            height          : 100%;
+            width           : 0;
+            background-color: white;
+            top             : 0;
+            left            : 0;
+            position        : absolute;
+            transition      : 0.3s linear
+        }
+
+        .active {
+            border-left  : none;
+            border-bottom: 3px solid white;
+            background   : rgba(250, 253, 255, 0.05);
+
+            &::before {
+                width: 5px;
+            }
+        }
+
+        .category3:hover {
+            background   : rgba(250, 253, 255, 0.05);
+            border-bottom: 3px solid white;
+            border-left  : none;
+            width        : 200px;
+            transition   : 0.3s linear;
+
+            &::before {
+                border-left  : none;
+                border-bottom: 3px solid white;
+                width        : 5px;
+            }
+        }
+
+        .sidebar__studenti {
+            font-size: 22px;
+        }
+
+        .sidebar__icon3 {
+            width : 30px;
+            height: 30px;
+        }
+
+        .category4 {
+            background     : none;
+            display        : flex;
+            justify-content: center;
+            padding        : 0;
+            width          : 150px;
+        }
+
+        &::before {
+            content         : '';
+            height          : 100%;
+            width           : 0;
+            background-color: white;
+            top             : 0;
+            left            : 0;
+            position        : absolute;
+            transition      : 0.3s linear
+        }
+
+        .active {
+            border-left  : none;
+            border-bottom: 3px solid white;
+            background   : rgba(250, 253, 255, 0.05);
+
+            &::before {
+                width: 5px;
+            }
+        }
+
+        .category4:hover {
+            background   : rgba(250, 253, 255, 0.05);
+            border-bottom: 3px solid white;
+            border-left  : none;
+            transition   : 0.3s linear;
+
+            &::before {
+                border-left  : none;
+                border-bottom: 3px solid white;
+                width        : 5px;
+            }
+        }
+
+        .sidebar__logout {
+            font-size: 22px;
+        }
+
+        .sidebar__icon4 {
+            width : 30px;
+            height: 30px;
+        }
+
+        // .Glavnoe-init {
+        //     border         : 1px solid #000;
+        //     min-width      : 1440px;
+        //     display        : flex;
+        //     justify-content: center;
+        // }
+
+        .navbar {
+            display        : flex;
+            justify-content: space-between;
+            width          : 100%;
+            margin-top     : 10px;
+        }
+
+        .girlimg {
+            display        : flex;
+            justify-content: end;
+        }
+
+        .indication1 {
+            border-left  : 7px solid #000D7F;
+            border-radius: 20px;
+        }
+
+        .indication2 {
+            border-left  : 7px solid #E96383;
+            border-radius: 20px;
+        }
+
+        .indication3 {
+            border-left  : 7px solid #FCCA58;
+            border-radius: 20px;
+        }
+
+        .indication4 {
+            border-left  : 7px solid #10CC9B;
+            border-radius: 20px;
+        }
+
+
+    }
+
+}
+
+///////////////////////////$RECYCLE.BIN
+@media (max-width:1000px) {
+    .Glavnoe {
+        display       : flex;
+        flex-direction: column;
+
+        .MainGlavnoe {
+            width     : 100%;
+            min-height: 30px !important;
+            position  : relative;
+        }
+
+        .Glavnoe__sidebar {
+            z-index     : 1;
+            display     : flex;
+            width       : 100%;
+            min-height  : 30px !important;
+            margin-left : 0;
+            padding-left: 10px;
+        }
+
+        .Glavnoe__sidebarTop {
+            margin-top: -15px;
+            width     : 38%;
+            background: none;
+        }
+
+        .sidebar__p {
+            font-size: 10px;
+        }
+
+        .sidebar__img {
+            width      : 10px;
+            margin-left: 0;
+        }
+
+        .categories {
+            top            : -15px;
+            position       : relative;
+            display        : flex;
+            justify-content: space-around;
+            flex-direction : unset;
+            width          : 60%;
+        }
+
+        .category {
+            background     : none;
+            display        : flex;
+            justify-content: center;
+            padding        : 0;
+            width          : 200px;
+
+        }
+
+        &::before {
+            content         : '';
+            height          : 100%;
+            width           : 0;
+            background-color: white;
+            top             : 0;
+            left            : 0;
+            position        : absolute;
+            transition      : 0.3s linear
+        }
+
+        .active {
+            border-left  : none;
+            border-bottom: 1px solid white !important;
+            background   : rgba(250, 253, 255, 0.05);
+
+            &::before {
+                width: 5px;
+            }
+        }
+
+        .category:hover {
+            background   : rgba(250, 253, 255, 0.05);
+            border-bottom: 1px solid white;
+            border-left  : none;
+            transition   : 0.3s linear;
+
+            &::before {
+                border-left  : none;
+                border-bottom: 3px solid white;
+                width        : 5px;
+            }
+        }
+
+        .sidebar__glavnoe {
+            font-size: 8px;
+        }
+
+        .sidebar__icon1 {
+            width : 10px;
+            height: 10px;
+        }
+
+        .category2 {
+            background     : none;
+            display        : flex;
+            padding        : 0;
+            justify-content: center;
+            width          : 200px;
+        }
+
+        &::before {
+            content         : '';
+            height          : 100%;
+            width           : 0;
+            background-color: white;
+            top             : 0;
+            left            : 0;
+            position        : absolute;
+            transition      : 0.3s linear
+        }
+
+        .active {
+            border-left  : none;
+            border-bottom: 1px solid white !important;
+            background   : rgba(250, 253, 255, 0.05);
+            width        : 200px;
+
+            &::before {
+                width: 5px;
+            }
+        }
+
+        .category2:hover {
+            background   : rgba(250, 253, 255, 0.05);
+            border-bottom: 1px solid white;
+            border-left  : none;
+            transition   : 0.3s linear;
+            width        : 200px;
+
+            &::before {
+                border-left  : none;
+                border-bottom: 1px solid white;
+                width        : 5px;
+            }
+        }
+
+
+
+        .sidebar__universiteti {
+            font-size: 8px;
+        }
+
+        .sidebar__icon2 {
+            width : 10px;
+            height: 10px;
+        }
+
+        .category3 {
+            background     : none;
+            display        : flex;
+            justify-content: center;
+            padding        : 0;
+            width          : 200px;
+        }
+
+
+        &::before {
+            content         : '';
+            height          : 100%;
+            width           : 0;
+            background-color: white;
+            top             : 0;
+            left            : 0;
+            position        : absolute;
+            transition      : 0.3s linear
+        }
+
+        .active {
+            border-left  : none;
+            border-bottom: 1px solid white;
+            background   : rgba(250, 253, 255, 0.05);
+
+            &::before {
+                width: 5px;
+            }
+        }
+
+        .category3:hover {
+            background   : rgba(250, 253, 255, 0.05);
+            border-bottom: 1px solid white;
+            border-left  : none;
+            width        : 200px;
+            transition   : 0.3s linear;
+
+            &::before {
+                border-left  : none;
+                border-bottom: 1px solid white;
+                width        : 5px;
+            }
+        }
+
+        .sidebar__studenti {
+            font-size: 8px;
+        }
+
+        .sidebar__icon3 {
+            width : 10px;
+            height: 10px;
+        }
+
+        .category4 {
+            background     : none;
+            display        : flex;
+            justify-content: center;
+            padding        : 0;
+            width          : 200px;
+        }
+
+        &::before {
+            content         : '';
+            height          : 100%;
+            width           : 0;
+            background-color: white;
+            top             : 0;
+            left            : 0;
+            position        : absolute;
+            transition      : 0.3s linear
+        }
+
+        .active {
+            border-left  : none;
+            border-bottom: 1px solid white;
+            background   : rgba(250, 253, 255, 0.05);
+
+            &::before {
+                width: 5px;
+            }
+        }
+
+        .category4:hover {
+            background   : rgba(250, 253, 255, 0.05);
+            border-bottom: 1px solid white;
+            border-left  : none;
+            transition   : 0.3s linear;
+
+            &::before {
+                border-left  : none;
+                border-bottom: 1px solid white;
+                width        : 5px;
+            }
+        }
+
+        .sidebar__logout {
+            font-size: 8px;
+        }
+
+        .sidebar__icon4 {
+            width : 10px;
+            height: 10px;
+        }
+
+        // .Glavnoe-init {
+        //     border         : 1px solid #000;
+        //     min-width      : 1440px;
+        //     display        : flex;
+        //     justify-content: center;
+        // }
+
+        .navbar {
+            display        : flex;
+            justify-content: space-between;
+            width          : 100%;
+            height         : 30px !important;
+            margin-top     : 5%;
+            height         : 10%;
+        }
+
+        .glavnoe__p {
+            margin: 0px 0px 0px 5px;
+        }
+
+        .navbarinit1__p {
+            margin-right: 5px;
+            font-size   : 6px;
+            display     : flex;
+            align-items : center;
+        }
+
+        .girlimg {
+            margin         : 0;
+            display        : flex;
+            justify-content: end;
+        }
+
+        .indications {
+            margin-top: 10px;
+        }
+
+        .indication1 {
+            border-left  : 2px solid #000D7F;
+            border-radius: 8%;
+        }
+
+        .studenti {
+            margin-top: 7%;
+        }
+
+        .studenti__amount {
+            display        : flex;
+            justify-content: center;
+        }
+
+        .indication2 {
+            border-left  : 2px solid #E96383;
+            border-radius: 8%;
+        }
+
+        .universiteti {
+            margin-top: 7%;
+        }
+
+        .indication3 {
+            border-left  : 2px solid #FCCA58;
+            border-radius: 8%;
+        }
+
+        .strani {
+            margin-top: 7%;
+        }
+
+        .indication4 {
+            border-left  : 2px solid #10CC9B;
+            border-radius: 8%;
+        }
+
+        .fakulteti {
+            margin-top: 7%;
+        }
+
     }
 }

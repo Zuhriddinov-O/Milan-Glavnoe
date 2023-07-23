@@ -18,31 +18,35 @@ const Glavnoe = () => {
     return (
         <React.Fragment>
             <div className="Glavnoe">
-                <div className="Glavnoe__sidebar">
-                    <div className="Glavnoe__sidebarTop">
-                        <img className="sidebar__img" src={Roboicon} alt="" />
-                        <p className="sidebar__p">Education</p>
-
-                        <div className="categories">
-                            <NavLink to={"/glavnoe"} className="category">
-                                <img className="sidebar__icon1" src={Homeicon} alt="" />
-                                <p className="sidebar__glavnoe">главное</p>
-                            </NavLink>
-                            <NavLink to={"/universitet"} className="category2">
-                                <img className="sidebar__icon2" src={Universityicon} alt="" />
-                                <p className="sidebar__universiteti">Университеты</p>
-                            </NavLink>
-                            <NavLink to={"/studenti"} className="category3">
-                                <img className="sidebar__icon3" src={Studenticon} alt="" />
-                                <p className="sidebar__studenti">Студенты</p>
-                            </NavLink>
-                            <NavLink to={"https://google.com"} className="category4">
-                                <img className="sidebar__icon4" src={Logouticon} alt="" />
-                                <p className="sidebar__logout">Выйти</p>
-                            </NavLink>
-                        </div>
+                <div className="MainGlavnoe">
+                    
+                    <div className="Glavnoe__sidebar">
+                        <div className="Glavnoe__sidebarTop">
+                            <img className="sidebar__img" src={Roboicon} alt="" />
+                            <p className="sidebar__p">Education</p>
+ </div>
+                            <div className="categories">
+                                <NavLink to={"/glavnoe"} className="category">
+                                    <img className="sidebar__icon1" src={Homeicon} alt="" />
+                                    <p className="sidebar__glavnoe">главное</p>
+                                </NavLink>
+                                <NavLink to={"/universitet"} className="category2">
+                                    <img className="sidebar__icon2" src={Universityicon} alt="" />
+                                    <p className="sidebar__universiteti">Университеты</p>
+                                </NavLink>
+                                <NavLink to={"/studenti"} className="category3">
+                                    <img className="sidebar__icon3" src={Studenticon} alt="" />
+                                    <p className="sidebar__studenti">Студенты</p>
+                                </NavLink>
+                                <NavLink to={"https://google.com"} className="category4">
+                                    <img className="sidebar__icon4" src={Logouticon} alt="" />
+                                    <p className="sidebar__logout">Выйти</p>
+                                </NavLink>
+                            </div>
+                       
                     </div>
                 </div>
+
                 <div className="Glavnoe-init">
                     <div className="navbar">
                         <div id="glavnoe" className="nabvarinit1">
@@ -74,14 +78,14 @@ const Glavnoe = () => {
                             <p className="fakulteti__amount">18</p>
                         </div>
                     </div>
-                       <Lchart />
+                    <Lchart />
                     <Pchart />
                     <Bchart />
                     <div className="locations">
                         <img className="locations" src={Locationimg} alt="" />
                     </div>
                 </div>
-             
+
             </div>
 
 
